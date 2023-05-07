@@ -16,4 +16,4 @@ class Post(models.Model):
     class Meta:
         ordering = ["title"]
         verbose_name = "Пост"
-        verbose_name_plural = "Посты"
+        verbose_name_plural = "Посттар"

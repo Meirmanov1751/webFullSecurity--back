@@ -12,8 +12,8 @@ class Customer(models.Model):
     is_active = models.BooleanField(default=True)
 
     class Meta:
-        verbose_name = 'Заказчик'
-        verbose_name_plural = 'Заказчики'
+        verbose_name = 'Тұтынушы'
+        verbose_name_plural = 'Тұтынушылар'
 
     def __str__(self):
         return f'{self.first_name} {self.last_name} {self.customer}'

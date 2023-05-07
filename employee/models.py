@@ -12,8 +12,8 @@ class Employee(models.Model):
     is_active = models.BooleanField(default=True)
 
     class Meta:
-        verbose_name = 'Исполнитель'
-        verbose_name_plural = 'Исполнители'
+        verbose_name = 'Орындаушы'
+        verbose_name_plural = 'Орындаушылар'
         ordering = ['last_name', 'first_name']
 
     def __str__(self):

@@ -15,8 +15,8 @@ class Order(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        verbose_name = 'Заказ'
-        verbose_name_plural = 'Заказы'
+        verbose_name = 'Тапсырыс'
+        verbose_name_plural = 'Тапсырыстар'
         ordering = ['-created_at']
 
     def __str__(self):

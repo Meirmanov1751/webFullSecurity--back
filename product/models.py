@@ -13,8 +13,8 @@ class Product(models.Model):
     is_available = models.BooleanField(default=True)
 
     class Meta:
-        verbose_name = 'Товар'
-        verbose_name_plural = 'Товары'
+        verbose_name = 'Өнім'
+        verbose_name_plural = 'Өнімдер'
         ordering = ['name']
 
     def __str__(self):

@@ -42,9 +42,9 @@ class User(AbstractBaseUser):
         SUPER_ADMIN = 'super_admin'
         AUDITOR = 'auditor'
 
-        ROLES_CHOICES = ((MANAGEMENT_COMPANY, "Управляющая компания"), (USER, "Пользователь"),
-                         (SUPER_ADMIN, 'Супер админ'),
-                         (EXECUTOR, 'Исполнитель'), (CUSTOMER, 'Заказчик'),
+        ROLES_CHOICES = ((MANAGEMENT_COMPANY, "Басқарушы компания"), (USER, "Пайдаланушы"),
+                         (SUPER_ADMIN, 'Супер әкімші'),
+                         (EXECUTOR, 'Орындаушы'), (CUSTOMER, 'Тұтынушы'),
                          (AUDITOR, 'Аудитор')
                          )
 
@@ -100,5 +100,5 @@ class User(AbstractBaseUser):
         return self.role == User.ROLES.MANAGEMENT_COMPANY
 
     class Meta:
-        verbose_name = 'Пользователь'
-        verbose_name_plural = 'Пользователи'
+        verbose_name = 'Пайдаланушы'
+        verbose_name_plural = 'Пайдаланушылар'
